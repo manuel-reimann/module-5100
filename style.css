@@ -1,0 +1,65 @@
+/* === Small CSS Reset === */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --pri-color: #191e24;
+  --sec-color: #8b2bff;
+  --pri-font: 'Source Code Pro', monospace;
+}
+
+ /* 
+ old colors 
+ #5E10BC
+ #222831 
+ */
+ 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--pri-color) !important;
+  /*border-image: linear-gradient(#912ef6, #af8eff) 30; --- for later maybe */
+  border: solid 10px var(--sec-color);
+  overflow-x: hidden;
+}
+
+/* Index Site*/
+.icon-main {
+  color: var(--sec-color);
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: var(--pri-font);
+  color: var(--sec-color);
+}
+
+/* Index Site*/
+/* Nav*/
+#sidenav {
+  border-bottom: solid 10px var(--sec-color);
+  border-right: solid 10px var(--sec-color);
+  height: calc(100% - 10px);
+}
+
+/* Content Sites */
+article {
+  min-height: 30rem;
+}
